@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="username" type="id"/>
+    <item name="password" type="id"/>
+    <item name="btnAdidas" type="id"/>
+    <item name="btnNike" type="id"/>
+    <item name="btnPuma" type="id"/>
+    <item name="brandOptions" type="id"/>
+    <item name="tvTitle" type="id"/>
+    <item name="registerButton" type="id"/>
+    <item name="logoImage" type="id"/>
+    <item name="welcomeText" type="id"/>
+    <item name="registerText" type="id"/>
+</resources>

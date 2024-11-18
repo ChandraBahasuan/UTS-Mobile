@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NextActivity">
+
+<ImageView
+    android:id="@+id/logo"
+    android:layout_width="200dp"
+    android:layout_height="200dp"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="50dp"
+    android:src="@drawable/suan_logoo_"
+    android:contentDescription="Logo of the application" />
+
+<!-- Judul Login -->
+<TextView
+    android:id="@+id/loginTitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/logo"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="20dp"
+    android:text="Login"
+    android:textSize="24sp"
+    android:textColor="@android:color/holo_green_dark" />
+
+<!-- Input Username -->
+<EditText
+    android:id="@+id/username"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/loginTitle"
+    android:layout_marginTop="20dp"
+    android:layout_marginStart="32dp"
+    android:layout_marginEnd="32dp"
+    android:hint="Username"
+    android:drawableStart="@android:drawable/ic_menu_myplaces"
+    android:padding="12dp"
+    android:background="@android:drawable/edit_text"
+    android:inputType="text" />
+
+<!-- Input Password -->
+<EditText
+    android:id="@+id/password"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/username"
+    android:layout_marginTop="10dp"
+    android:layout_marginStart="32dp"
+    android:layout_marginEnd="32dp"
+    android:hint="Password"
+    android:drawableStart="@android:drawable/ic_lock_lock"
+    android:padding="12dp"
+    android:background="@android:drawable/edit_text"
+    android:inputType="textPassword" />
+
+<!-- Tombol Login -->
+<Button
+    android:id="@+id/loginButton"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/password"
+    android:layout_marginStart="32dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginEnd="32dp"
+    android:backgroundTint="@android:color/holo_green_dark"
+    android:text="Login"
+    android:textColor="@android:color/white" />
+
+<!-- Prompt Daftar -->
+<TextView
+    android:id="@+id/registerPrompt"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/loginButton"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="20dp"
+    android:text="Belum punya akun?"
+    android:textColor="@android:color/darker_gray" />
+
+<!-- Link Daftar -->
+<TextView
+    android:id="@+id/registerLink"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/registerPrompt"
+    android:layout_centerHorizontal="true"
+    android:text="Daftar"
+    android:textColor="@android:color/holo_purple"
+    android:textStyle="bold" />
+
+</RelativeLayout>
